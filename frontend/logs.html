@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocaCar - Logs de Auditoria</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo">
+        <i class="fa-solid fa-car-side"></i>
+        <span>LocaCar</span>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn-log">
+          <i class="fa-solid fa-store"></i> Voltar à Locadora
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-banner">
+    <div class="banner-content">
+      <h2>Registros de Auditoria</h2>
+      <p>Histórico de operações realizadas no sistema (MongoDB)</p>
+    </div>
+  </section>
+
+  <main class="main-container">
+    <section class="card-section">
+      <h3><i class="fa-solid fa-list-check"></i> Histórico de Ações Registradas</h3>
+      <div class="table-responsive">
+        <table class="table-logs">
+          <thead>
+            <tr>
+              <th style="width: 5%;">#</th>
+              <th style="width: 22%;">Ação</th>
+              <th style="width: 43%;">Detalhes da Operação</th>
+              <th style="width: 30%;">Data / Hora</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaLogs">
+            <!-- Os dados do MongoDB serão inseridos via logs.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 LocaCar - Todos os direitos reservados. Integração MySQL &amp; MongoDB.</p>
+  </footer>
+
+  <script src="js/logs.js"></script>
+</body>
+</html>
